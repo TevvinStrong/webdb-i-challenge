@@ -13,6 +13,7 @@
     select orderdate from orders order by orderdate desc;
 
 ## find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name. Returns 11 records.
+    select count(suppliername) from suppliers where length(suppliername) > 20;
 
 ## find all customers that include the word "market" in the name. Should return 4 records.
 
